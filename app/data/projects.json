@@ -1,0 +1,114 @@
+{
+  "projects": [
+    {
+      "name": "blog<br />.smessina<br />.com",
+      "link": "https://blog.smessina.com/",
+      "sourceUrl": "",
+      "slug": "blog",
+      "description": "Chronicling my debauchery in front end development.",
+      "screenshot": "/images/screens/blog.png",
+      "logo": "/images/logos/blog-logo.png",
+      "tech": "HTML, CSS, and JavaScript"
+    },
+    {
+      "name": "outwork",
+      "link": "https://ow.smessina.com/",
+      "sourceUrl": null,
+      "slug": "outwork",
+      "description": "Log your workouts.<br /><br />Allows mobile-friendly data entry for easy workout tracking.",
+      "screenshot": "/images/screens/outwork.png",
+      "logo": "/images/logos/outwork-logo.png",
+      "tech": "Remix, React, PostgreSQL, SCSS"
+    },
+    {
+      "name": "HUB",
+      "link": "https://hubert.wiki/",
+      "sourceUrl": "",
+      "slug": "hub",
+      "description": "HUB is your own personal wiki: you can maintain notes, text yourself reminders, and more.<br /><br />Full markdown and SMS-upload support make HUB a lightweight, easy solution to digital clutter.",
+      "screenshot": "/images/screens/hub.png",
+      "logo": "/images/logos/hub-logo.png",
+      "tech": "Node, React, Webhooks, MongoDB, HTML, CSS"
+    },
+    {
+      "name": "WAILto ",
+      "link": "https://wailto.smessina.com/",
+      "sourceUrl": "https://github.com/regexpressyourself/wailto",
+      "slug": "wailto",
+      "description": "WAILto (or What Am I Listening To) is a way to analyze your music listening. Learn about your own music trends and history. ",
+      "screenshot": "/images/screens/wailto.png",
+      "logo": "/images/logos/wailto-logo.png",
+      "tech": "Node, React, React Hooks API, PostgreSQL, HTML, SCSS"
+    },
+    {
+      "name": "orderUp hookUp",
+      "link": "https://orderuphookup.smessina.com/",
+      "sourceUrl": "https://github.com/regexpressyourself/OrderUp-HookUp",
+      "slug": "orderup-hookup",
+      "description": "Find food near you. Optimized for mobile and phone, orderUp hookUp cross-references the Google and Yelp APIs to find nearby restaurants. ",
+      "screenshot": "/images/screens/ouphup.png",
+      "logo": "/images/logos/orderuphookup.png",
+      "tech": "JavaScript, Angular 1, Node, Express, HTML, CSS, and Bootstrap."
+    },
+    {
+      "name": "Playlist Parser",
+      "link": "https://pp.smessina.com/",
+      "sourceUrl": "https://github.com/regexpressyourself/playlist-parser",
+      "slug": "pp",
+      "description": "Check which of your Spotify playlists contain a given song.<br /><br />Full authentication with Spotify allows support of public and private playlists.",
+      "screenshot": "/images/screens/pp.png",
+      "logo": "/images/logos/pp-logo.png",
+      "tech": "Remix, React, PostgreSQL, SCSS"
+    },
+    {
+      "name": "personaList",
+      "link": "https://personalist.smessina.com/",
+      "sourceUrl": "https://github.com/regexpressyourself/personalist",
+      "slug": "personalist",
+      "description": "With personaList, you can comment up every song in your Spotify playlist. Pages are dynamically generated with JavaScript to show Spotify API data.",
+      "screenshot": "/images/screens/plist.png",
+      "logo": "/images/logos/personalist.png",
+      "tech": "React, React Hooks API, Node, Express, HTML, SCSS, and Gulp."
+    },
+    {
+      "name": "toadstools",
+      "link": "https://toadstools.smessina.com/",
+      "sourceUrl": "https://github.com/regexpressyourself/toadstools",
+      "slug": "toadstools",
+      "description": "Toadstools offers widgets for live streamers to display 'now playing' information, countdown timers, etc. ",
+      "screenshot": "/images/screens/tstools.png",
+      "logo": "/images/logos/toadstools-logo.png",
+      "tech": "Deno, React, React Hooks, HTML, CSS"
+    },
+    {
+      "name": "Practice Buddy",
+      "link": "https://practicebuddy.smessina.com/",
+      "sourceUrl": "https://github.com/regexpressyourself/PracticeBuddy",
+      "slug": "practice-buddy",
+      "description": "Practice Buddy helps you learn musical modes and scales and improve your musicianship. Choose any mode and any starting pitch and start practicing today! ",
+      "screenshot": "/images/screens/pbuddy.png",
+      "logo": "/images/logos/practicebuddy.png",
+      "tech": "React, JavaScript, ES6, Webpack, HTML, CSS, and CSS Grid."
+    },
+    {
+      "name": "Git Flow",
+      "link": "https://github.com/regexpressyourself/gitflow",
+      "sourceUrl": "https://gitflow.smessina.com/#/",
+      "slug": "git-flow",
+      "description": "Git Flow is an interactive git tutorial that walks users through a git workflow via a step-by-step flowchart.",
+      "screenshot": "/images/screens/gitflow.png",
+      "logo": "/images/logos/gitflow.png",
+      "tech": "React, React Router v. 3, JavaScript, ES6, HTML, CSS, SCSS, and Bootstrap."
+    },
+    {
+      "name": "Twitch Tracker",
+      "link": "https://twitchtracker.smessina.com/",
+      "sourceUrl": "https://github.com/regexpressyourself/twitch-tracker",
+      "slug": "twitch-tracker",
+      "description": "Twitch Tracker gives you real time analytics for your Twitch stream. Chat, view count, and viewer names are all pulled from the Twitch API. ",
+      "screenshot": "/images/screens/ttrack.png",
+      "logo": "/images/logos/twitchtracker.png",
+      "tech": "HTML, CSS, JavaScript, Node, Express"
+    }
+  ]
+}

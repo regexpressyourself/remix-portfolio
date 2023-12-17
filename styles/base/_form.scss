@@ -1,0 +1,324 @@
+input {
+  z-index: 100000;
+}
+
+textarea:focus,
+input:focus {
+  outline: 0;
+  height: auto;
+}
+
+/* Question */
+
+input.question,
+textarea.question {
+  font-size: calc(0.5vw + 16px);
+  font-weight: 300;
+  border-radius: 2px;
+  margin: 0;
+  border: none;
+  width: 100%;
+  background: black;
+  transition:
+    padding-top 0.2s ease,
+    margin-top 0.2s ease;
+  overflow-x: hidden;
+  /* Hack to make "rows" attribute apply in Firefox. */
+}
+
+textarea.question {
+  width: 92%;
+}
+
+/* Underline and Placeholder */
+
+input.question + label,
+textarea.question + label {
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0;
+  width: 10%;
+  border-top: 1px solid $blue;
+  transition: width 0.4s ease;
+  height: 0px;
+  width: 100%;
+}
+
+input.question:focus + label,
+textarea.question:focus + label {
+  width: 80%;
+  height: auto;
+}
+
+input.question:focus,
+input.question:valid {
+  padding-top: 20px;
+  height: auto;
+}
+
+textarea.question:valid,
+textarea.question:focus {
+  margin-top: 20px;
+  height: auto;
+}
+
+input.question:invalid {
+  color: $formGray;
+}
+
+input.question:active,
+input.question:focus,
+input.question:valid {
+  color: black;
+}
+
+input.question:active + label > span,
+input.question:focus + label > span,
+input.question:valid + label > span {
+  top: -60px;
+  font-size: calc(0.5vw + 16px);
+  font-weight: 600;
+  color: $deepblue;
+  @media screen and (max-width: 768px) {
+    top: -50px;
+  }
+  @media screen and (min-width: 1200px) {
+    top: -70px;
+  }
+  @media screen and (max-width: 420px) {
+    white-space: normal;
+    top: -55px;
+  }
+}
+
+textarea.question:focus + label > span,
+textarea.question:valid + label > span {
+  top: -35vh;
+  font-weight: 600;
+  color: $deepblue;
+  font-size: calc(0.5vw + 16px);
+  @media screen and (max-width: 768px) {
+    top: calc(-30vh - 40px);
+  }
+  @media screen and (min-width: 1200px) {
+    top: calc(-30vh - 40px);
+  }
+  @media screen and (max-width: 420px) {
+    white-space: normal;
+    top: calc(-30vh - 40px);
+  }
+}
+
+input.question + label,
+textarea.question + label,
+input.question:valid + label,
+textarea.question:valid + label {
+  border-color: $blue;
+  border-width: 5px;
+}
+
+input.question:invalid,
+textarea.question:invalid {
+  box-shadow: none;
+}
+
+input.question + label > span,
+textarea.question + label > span {
+  font-weight: 300;
+  margin: 0;
+  position: absolute;
+  color: $formGray;
+  font-size: calc(1.5vw + 12px);
+  top: -35px;
+  left: 0px;
+  z-index: 1;
+  transition:
+    top 0.2s ease,
+    height 0.2s ease,
+    font-size 0.2s ease,
+    color 0.2s ease;
+  @media screen and (min-width: 1200px) {
+    top: -50px;
+  }
+}
+
+textarea.question + label > span {
+  top: -30vh;
+  max-width: 100%;
+  white-space: normal;
+}
+
+a.btn,
+button.btn {
+  margin: auto;
+  width: 20vw;
+  min-width: 260px;
+  z-index: 1;
+  svg {
+    margin: 0 5px 0 5px;
+    transition: transform 0.4s ease-in-out;
+
+    @media screen and (max-width: 768px) {
+      margin: 0 2px 0 5px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin: 0 15px 0 15px;
+    }
+  }
+}
+
+button.btn--webdev {
+  z-index: 1;
+  &:hover {
+    svg {
+      transform: rotate(0deg);
+      animation: blink 0.5s 3;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    margin-right: 5px !important;
+  }
+  @media screen and (max-width: 420px) {
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+}
+
+button.btn--mktg {
+  z-index: 1;
+  &:hover {
+    svg {
+      animation: shake 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    margin-left: 5px !important;
+  }
+  @media screen and (max-width: 420px) {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+button.btn--learnmore {
+  &:hover {
+    svg {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+button.btn--startproject {
+  svg {
+    transform: rotate(-90deg);
+  }
+  &:hover {
+    svg {
+      transform: rotate(0deg);
+    }
+  }
+}
+
+button.btn--touch {
+  z-index: 1;
+  &:focus {
+    z-index: 1;
+  }
+  svg {
+    transform: rotate(90deg);
+  }
+  &:hover {
+    svg {
+      transform: rotate(0deg);
+    }
+  }
+}
+button.project-link {
+  position: absolute;
+  bottom: 15%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+  background: none;
+  animation: none;
+  background-color: white;
+  border-color: $blue;
+  color: $blue;
+  svg {
+    transform: rotate(90deg);
+  }
+  &:hover {
+    background-color: $blue;
+    color: white;
+    border-color: white;
+    svg {
+      transform: rotate(0deg);
+    }
+  }
+}
+
+button.btn--mid-portfolio {
+  &:hover {
+    svg {
+      animation: shakeUp 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    }
+  }
+}
+
+button.btn--form {
+  width: 20vw;
+  min-width: 200px;
+  &:hover {
+    svg {
+      transform: translate(10px, -10px);
+    }
+  }
+}
+
+a.btn.btn--learnmore,
+button.btn.btn--learnmore {
+  z-index: 10000;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  border: 2px solid $blue;
+  animation: none;
+  bottom: 10vh;
+  background-color: white;
+  color: $blue;
+  @media screen and (min-width: 920px) {
+    bottom: 20vh;
+  }
+}
+
+a.btn.btn--learnmore:hover,
+button.btn.btn--learnmore:hover {
+  border: 2px solid white;
+  box-shadow: none;
+  background-color: $blue;
+  background-image: linear-gradient(
+    to left bottom,
+    #4772d9,
+    #4f78e0,
+    #577ee7,
+    #5f85ef,
+    #678bf6
+  );
+  color: white;
+}
+
+.mail-link-blurb {
+  text-align: center;
+  font-size: 32px;
+  color: white;
+  a {
+    font-weight: 600;
+    color: white;
+  }
+}

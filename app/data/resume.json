@@ -1,0 +1,208 @@
+{
+  "basics": {
+    "name": "Sam Messina",
+    "picture": "https://smessina.com/images/sm_fav.png",
+    "email": "sam@smessina.com",
+    "phone": "",
+    "website": "https://smessina.com",
+    "location": {
+      "city": "Saint Louis",
+      "countryCode": "US",
+      "region": "MO"
+    }
+  },
+  "work": [
+    {
+      "company": "Capital One",
+      "position": "Senior Software Engineer",
+      "website": "https://www.capitalone.com/",
+      "startDate": "2022-12-15",
+      "summary": "",
+      "highlights": [
+        "Migrated critical application from <strong>EC2</strong> to <strong>AWS Batch</strong> and <strong>Fargate</strong>, reducing cost and increasing throughput",
+        "Developed and deployed modular, database-driven implementation of customer offers, allowing flexibile offer terms and cutting down time for updates"
+      ]
+    },
+    {
+      "company": "Maxwell",
+      "position": "Senior Software Engineer",
+      "website": "https://www.himaxwell.com",
+      "startDate": "2021-07-15",
+      "endDate": "2022-11-01",
+      "summary": "",
+      "highlights": [
+        "Led initiative adding <a href='https://web.archive.org/web/20220415153623/https://knowledge.himaxwell.com/screen-share' target='_blank'>screen sharing functionality</a> to the primary application using <strong>React</strong> and <strong>Ruby on Rails</strong>",
+        "Created, launched, and contributed to the <a href='https://web.archive.org/web/20220119004530/https://engineering.himaxwell.com/' target='_blank'>Maxwell engineering blog</a>",
+        "Implemented web socket interface for asynchronous UI updates using <strong>React</strong> and <strong>Ruby on Rails</strong>",
+        "Acted as dev lead for initiative adding <a href='https://web.archive.org/web/20220411210900/https://finledger.com/2022/04/11/maxwell-and-snapdocs-partner-to-accelerate-home-loan-digital-closings/' target='_blank'>Snapdocs document e-closing integration</a> to the application using <strong>React</strong>, <strong>Webhooks</strong>, and <strong>Ruby on Rails</strong>"
+      ]
+    },
+    {
+      "company": "Bitovi",
+      "position": "JavaScript Developer",
+      "website": "https://www.bitovi.com",
+      "startDate": "2020-02-15",
+      "endDate": "2021-07-01",
+      "summary": "As a JavaScript consultant, I worked across the stack in a variety of applications to support our client. Whether it was designing new applications to process COVID-19 Payment Protection Program loans in 2020, or enhancing performance on legacy loan administration applications, I provided flexible, results-driven development support for clients.",
+      "highlights": [
+        "Developed and deployed <a href='https://web.archive.org/web/20210613024914/https://www.bitovi.com/ux-design-consulting/ux-case-studies/bafs-ppp' target='_blank'>PPP loan application</a> as an integral part of project scoping, application architecture, and full-stack development using <strong>Node</strong>, <strong>Koa</strong>, and <strong>React</strong> with <strong>Typescript</strong>",
+        "Implemented cross-project <strong>micro frontend</strong> solution in <strong>React</strong> to transition a legacy app to a new architecture",
+        "Developed spreadsheet application using <strong>RxJS</strong> and <strong>React</strong>, supporting reference cells and formulas",
+        "Managed a &ldquo;squad&rdquo; of four developers, focused on a single client application"
+      ]
+    },
+    {
+      "company": "TopstepTrader",
+      "position": "Front End Developer",
+      "website": "https://www.topsteptrader.com",
+      "startDate": "2018-06-01",
+      "endDate": "2020-02-15",
+      "summary": "As the first front end developer at TopstepTrader, collaborate cross-departmentally to create reusable front end assets, maintain a high standard of front end focused code and architecture, orchestrate testing and data analysis, and automate marketing processes.",
+      "highlights": [
+        "Architected <strong>micro frontend</strong> solution to migrate from an <strong>Angular 2</strong> monolith into a leaner, <strong>React</strong> solution",
+        "Led front end engineering team across tech stacks including <strong>Angular 2</strong>, <strong>React</strong>, <strong>Python Django</strong> templates, <strong>Hubspot HubL</strong>, custom <strong>WordPress</strong> themes, and native <strong>HTML/CSS/JavaScript</strong>",
+        "Designed, developed, and implemented a reusable component library, using <strong>Webpack</strong> to compile modular <strong>ES6+ JavaScript</strong> and <strong>SCSS</strong> into static, cross-browser-ready <strong>JavaScript</strong> and <strong>CSS</strong>",
+        "Improved first paint time by 300% through a migration from <strong>WordPress</strong> to a faster <strong>Node</strong> and <strong>Gulp</strong> solution",
+        "Led front end developer hiring by creating technical tests and interview processes to verify candidates' skills"
+      ]
+    },
+    {
+      "company": "MacUpdate",
+      "position": "Web Developer Intern",
+      "website": "https://www.macupdate.com",
+      "startDate": "2016-06-01",
+      "endDate": "2017-09-01",
+      "summary": "I interned with MacUpdate for two consecutive summers. During my first internship, I was able to lead an initiative in bringing responsive design to the site for the first time. My second summer with MacUpdate, I led an SEO initiative improving page performance and on-page SEO.",
+      "highlights": [
+        "Reduced average page size by 15% by designing and implementing a build process using <strong>Grunt</strong> and <strong>Node</strong>",
+        "Introduced responsive design using <strong>Bootstrap</strong>, <strong>jQuery/JavaScript,</strong> <strong>CSS</strong>, and <strong>HTML</strong>"
+      ]
+    },
+    {
+      "company": "Southern Illinois University",
+      "position": "Student Developer",
+      "website": "https://www.siu.edu",
+      "startDate": "2014-01-20",
+      "endDate": "2018-05-15",
+      "summary": "Working on the university website gave me the opportunity to write custom features for faculty, teach sessions on using our CMS, and help lead an holistic SEO initiative.",
+      "highlights": [
+        "Authored web pages, forms, and apps for university departments using <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, and <strong>PHP</strong>",
+        "Organized and led classes detailing basic <strong>HTML</strong>, content creation, and best <strong>UI/UX</strong> practices for >200 users"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Southern Illinois University",
+      "area": "Computer Science",
+      "studyType": "B.S.",
+      "startDate": "2014-01-15",
+      "endDate": "2018-05-15",
+      "gpa": "3.74"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywords": [
+        "JavaScript,",
+        "Typescript,",
+        "HTML,",
+        "CSS,",
+        "SCSS,",
+        "Python,",
+        "PHP,",
+        "Ruby,",
+        "MySQL,",
+        "Java,",
+        "Bash"
+      ]
+    },
+    {
+      "name": "Libraries",
+      "keywords": [
+        "React,",
+        "Angular,",
+        "Remix,",
+        "Next.js,",
+        "Node,",
+        "RxJS,",
+        "Redux,",
+        "Django,",
+        "Rails,",
+        "WordPress,",
+        "SASS / SCSS"
+      ]
+    },
+    {
+      "name": "Tools",
+      "keywords": [
+        "Git,",
+        "Webpack,",
+        "Gulp,",
+        "Grunt,",
+        "Linux,",
+        "Vim,",
+        "AWS,",
+        "Hubspot,",
+        "Google Analytics & Search Console"
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "name": "outwork",
+      "releaseDate": "2023-02-02",
+      "website": "ow.smessina.com",
+      "tech": "<strong>Remix</strong>, <strong>React</strong>, <strong>PostgreSQL</strong>, <strong>SCSS</strong>",
+      "summary": "Create, maintain, and track your workouts"
+    },
+    {
+      "name": "WAILto",
+      "releaseDate": "2019-10-10",
+      "website": "wailto.smessina.com",
+      "source": "https://github.com/regexpressyourself/wailto",
+      "tech": "<strong>Node</strong>, <strong>React Hooks</strong>, and <strong>PostgreSQL</strong>",
+      "summary": "Analysis and visualizations on Last.fm music data."
+    }
+  ],
+  "addl_work": [
+    {
+      "company": "Southern Illinois University",
+      "position": "Student Developer",
+      "website": "https://www.siu.edu",
+      "startDate": "2014-01-20",
+      "endDate": "2018-05-15",
+      "summary": "Working on the university website gave me the opportunity to write custom features for faculty, teach sessions on using our CMS, and help lead an holistic SEO initiative.",
+      "highlights": [
+        "Authored web pages, forms, and apps for university departments using <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, and <strong>PHP</strong>",
+        "Organized and led classes detailing basic <strong>HTML</strong>, content creation, and best <strong>UI/UX</strong> practices for >200 users"
+      ]
+    }
+  ],
+  "addl_publications": [
+    {
+      "name": "HUB",
+      "releaseDate": "2021-07-01",
+      "website": "hubert.wiki",
+      "tech": "<strong>React</strong>, <strong>Node</strong>, <strong>Mongo</strong>, and <strong>Webhooks</strong>",
+      "source": "https://github.com/regexpressyourself/hub",
+      "summary": "Personal wiki with markdown and SMS support."
+    },
+    {
+      "name": "toadstools",
+      "releaseDate": "2020-07-01",
+      "website": "toadstools.smessina.com",
+      "tech": "<strong>Deno</strong>, <strong>React</strong>, <strong>React</strong> Hooks",
+      "source": "https://github.com/regexpressyourself/toadstools",
+      "summary": "Display album art and timers on Twitch streams"
+    },
+    {
+      "name": "WorkInOut",
+      "releaseDate": "2023-01-01",
+      "website": "wio.smessina.com",
+      "tech": "<strong>Remix</strong>, <strong>React</strong>, <strong>PostgreSQL</strong>, <strong>SCSS</strong>",
+      "summary": "Create, maintain, and track your workouts"
+    }
+  ]
+}

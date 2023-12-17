@@ -1,0 +1,55 @@
+a.btn,
+.btn {
+  background-color: $blue;
+  color: white;
+  margin: 20px auto 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 18px;
+  border: 2px solid $blue;
+  transition-duration: 0.3s;
+  transition-property: color, background-color;
+  height: 7vh;
+  min-height: 45px;
+  width: 200px;
+  min-width: 20vw;
+  font-size: calc(0.5vw + 16px);
+  &:hover {
+    animation: shadow-drop-2-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+      both;
+    background-color: white;
+    color: $blue;
+    cursor: pointer;
+  }
+}
+
+.btn--invert {
+  background-color: white;
+  color: $blue;
+  &:hover {
+    background-color: $blue;
+    color: white;
+  }
+}
+
+.clickable,
+a:not(.btn) {
+  background: linear-gradient(to bottom, $blue 0%, $blue 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  color: #000;
+  text-decoration: none;
+  transition:
+    background-size 0.3s,
+    color 0.3s;
+}
+
+.clickable:hover,
+a:hover {
+  cursor: pointer;
+  background-size: 4px 90%;
+  color: white;
+}

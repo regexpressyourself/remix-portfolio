@@ -1,0 +1,119 @@
+$gutter-size: 10vw;
+.contact-section {
+  padding: 10% $gutter-size 10%;
+}
+
+.contact-header__bg.bottom {
+  transform: skewY(6deg);
+  transform-origin: top right;
+  background-color: $blue;
+
+  background-image: linear-gradient(
+    to left top,
+    #4772d9,
+    #4f78e0,
+    #577ee7,
+    #5f85ef,
+    #678bf6
+  );
+  height: 150%;
+  z-index: -1;
+}
+
+.contact-form {
+  background-color: white;
+  box-shadow:
+    0 3px 8px 0 rgba(0, 0, 0, 0.2),
+    0 0 0 1px rgba(0, 0, 0, 0.08);
+  padding: 5%;
+}
+.contact-form-bg {
+  z-index: -1;
+  background: transparent;
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: background 1s;
+}
+.contact-section.shown {
+  span.x {
+    z-index: 100000;
+  }
+  .contact-form-bg {
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 0;
+  }
+  .contact-form {
+    position: fixed;
+    animation: slide-bot 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media only screen and (max-width: 768px) {
+      left: 10%;
+      transform: translate(-5%, -50%);
+    }
+  }
+}
+.contact-section.unshown {
+  .contact-form {
+    position: fixed;
+    animation: slide-bot 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @media only screen and (max-width: 768px) {
+      left: 10%;
+      transform: translate(-5%, -50%);
+    }
+    animation: slide-top 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+}
+
+.contact-section {
+  position: relative;
+  span.x {
+    transition: top 0.4s;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: -100000;
+    &:hover {
+      cursor: pointer;
+    }
+    @media screen and (max-width: 420px) {
+      right: 5px;
+    }
+  }
+}
+
+.contact-header {
+  line-height: 0.75;
+  margin-bottom: 40px;
+}
+
+.contact-subhead {
+  font-size: calc(3vw + 12px);
+  line-height: 1;
+  ul {
+    padding-left: 0;
+  }
+  li {
+    padding: 0 0 20px 0;
+    margin: 0;
+    line-height: 1.2;
+    list-style: none;
+    a {
+      padding-bottom: 5px;
+      padding-top: 20px;
+    }
+  }
+  svg {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px -5px 0;
+  }
+}

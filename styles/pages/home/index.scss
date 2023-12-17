@@ -1,0 +1,131 @@
+@import "../../base/index.scss";
+@import "components/_contact.scss";
+@import "components/_projects.scss";
+@import "components/_home-header.scss";
+
+$gutter-size: 10vw;
+
+@font-face {
+  font-family: "GilroyBold";
+  font-display: auto;
+  src:
+    local("Gilroy-ExtraBold"),
+    url("/fonts/Gilroy-ExtraBold.otf") format("opentype");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GilroyLight";
+  font-display: auto;
+  font-display: swap;
+  src:
+    local("Gilroy-Light"),
+    url("/fonts/Gilroy-Light.otf") format("opentype");
+}
+
+* {
+  font-family: "GilroyLight", Arial, sans-serif;
+}
+
+li,
+p {
+  font-weight: 300;
+  font-size: calc(0.5vw + 16px);
+}
+strong {
+  font-weight: 800;
+}
+ul {
+  margin-top: 0;
+}
+
+main {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+section {
+  min-height: 200px;
+}
+
+.portfolio-section__portfolio {
+  padding: 0 $gutter-size 10%;
+}
+
+h3 {
+  margin-top: 0;
+  span {
+    font-weight: 200;
+    line-height: 1;
+    font-family: "GilroyLight", Arial, sans-serif;
+    font-weight: 200;
+    font-size: calc(1.5vw + 12px);
+    display: block;
+  }
+}
+
+h2 {
+  font-size: 8vw;
+  margin: 0;
+  &.project-header-h2 {
+    line-height: 0.9;
+    margin-bottom: 16px;
+  }
+  @media only screen and (max-width: 768px) {
+    font-size: 12vw;
+    & + span {
+      font-size: 9vw;
+      line-height: 1;
+      margin-bottom: -10px;
+    }
+  }
+}
+
+h3 {
+  font-size: 33w;
+  @media only screen and (max-width: 768px) {
+    font-size: 2rem;
+  }
+  @media only screen and (max-width: 420px) {
+    font-size: 6vw;
+  }
+}
+
+h1 {
+  line-height: 0.8;
+  padding: 5% 3%;
+  position: relative;
+  color: white;
+  margin: 0;
+  font-size: 14vw;
+  @media only screen and (max-width: 768px) {
+    margin-top: 20vh;
+    font-size: 16vw;
+  }
+  @media only screen and (max-width: 420px) {
+    margin-top: 10vh;
+  }
+  @media only screen and (min-width: 1200px) {
+    font-size: 12vw;
+  }
+}
+
+footer {
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: white;
+  min-height: 70px;
+  max-height: 70px;
+  width: 100%;
+  overflow-y: hidden;
+  .footer__saav {
+    img {
+      height: 100px;
+    }
+  }
+}

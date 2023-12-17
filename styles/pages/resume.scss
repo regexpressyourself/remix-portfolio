@@ -1,0 +1,290 @@
+html {
+  font-size: 12.5px;
+}
+
+@font-face {
+  font-family: "GilroyBold";
+  font-display: auto;
+  src: local("Gilroy-ExtraBold"),
+    url("/fonts/Gilroy-ExtraBold.otf") format("opentype");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GilroyLight";
+  font-display: auto;
+  font-display: swap;
+  src: local("Gilroy-Light"), url("/fonts/Gilroy-Light.otf") format("opentype");
+}
+
+html.short {
+  font-size: 13.75px;
+}
+@media screen {
+  html {
+    font-size: 16px;
+  }
+}
+body {
+  font-family: "GilroyLight", sans-serif;
+  color: #333;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-family: "GilroyBold", sans-serif;
+  line-height: 1;
+  font-weight: 900;
+}
+h1 {
+  font-size: 4rem;
+  text-align: left;
+  line-height: 0.9;
+  letter-spacing: -4px;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.6rem;
+  letter-spacing: -1px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+h3.skill {
+  font-size: 1.2rem;
+  margin-bottom: 0.1rem;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+hr {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  border-style: solid;
+  border-color: #333;
+}
+.top-hr {
+  margin-top: 10px;
+}
+
+.publications-hr {
+  margin-top: 0px;
+}
+
+p {
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+ul {
+  padding-inline-start: 30px;
+}
+
+li {
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 0.2rem;
+}
+
+a {
+  color: #4772d9;
+  text-decoration: none;
+  font-family: "GilroyBold", sans-serif;
+}
+
+a:visited {
+  color: #4772d9;
+}
+
+a:hover {
+  color: #4772d9;
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.date {
+  font-family: "GilroyBold", sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  margin: 0 0 0 70px;
+  text-align: right;
+}
+
+.heading-inline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+
+.heading-inline--publications h3 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 100%;
+  a {
+    padding-left: 1rem;
+  }
+}
+.heading-inline--publications {
+  padding-bottom: 0;
+}
+
+.heading-inline--publications * {
+  margin: 0;
+}
+.heading-inline--education:last-of-type {
+  margin-top: 8px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.contact-header {
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: right;
+}
+
+.main {
+  margin: 0 auto;
+}
+
+.job-list {
+  margin-top: 0;
+}
+
+.publication-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .publication {
+    flex: 45%;
+  }
+  .publication:nth-child(odd) {
+    padding-right: 24px;
+  }
+  .publication:nth-child(even) {
+    padding-left: 24px;
+  }
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    .publication:nth-child(2n) {
+      padding-left: 0;
+      padding-right: 24px;
+    }
+  }
+}
+
+.publications-tech {
+  font-family: "Inconsolata", inconsolata;
+  margin-top: 0;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0px;
+  font-size: 1rem;
+}
+
+.publications-tech a {
+  font-weight: 400;
+  font-size: 1rem;
+
+  font-family: "Inconsolata", inconsolata;
+}
+
+.publications-summary {
+  margin-top: 0;
+}
+
+.project-link {
+  font-size: 1rem;
+}
+
+.skill-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.skill-section {
+  padding: 0 10px;
+  flex-basis: 33%;
+}
+
+.skill-section:first-of-type {
+  padding: 0 10px 0 0;
+}
+
+.skill-section:last-of-type {
+  padding: 0 0 0 10px;
+}
+
+.skill {
+  margin: 0 0 5px;
+}
+
+.keywords {
+  font-size: 0.8rem;
+  display: inline-block;
+}
+
+@media screen {
+  body {
+    padding: 5vh 5vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    max-width: 90%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    max-width: 900px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    flex-wrap: wrap;
+  }
+  .project-link {
+    display: block;
+  }
+  .contact-header {
+    text-align: left;
+  }
+  .skill-container {
+    flex-wrap: wrap;
+  }
+}
