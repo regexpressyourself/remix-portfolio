@@ -7,6 +7,7 @@ $gutter-size: 10vw;
   transform: skewY(6deg);
   transform-origin: top right;
   background-color: $blue;
+  top: -1px;
 
   background-image: linear-gradient(
     to left top,
@@ -22,9 +23,7 @@ $gutter-size: 10vw;
 
 .contact-form {
   background-color: white;
-  box-shadow:
-    0 3px 8px 0 rgba(0, 0, 0, 0.2),
-    0 0 0 1px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
   padding: 5%;
 }
 .contact-form-bg {

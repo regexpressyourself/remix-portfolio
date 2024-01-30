@@ -42,9 +42,7 @@ a:not(.btn) {
   background-size: 4px 4px;
   color: #000;
   text-decoration: none;
-  transition:
-    background-size 0.3s,
-    color 0.3s;
+  transition: background-size 0.3s, color 0.3s;
 }
 
 .clickable:hover,

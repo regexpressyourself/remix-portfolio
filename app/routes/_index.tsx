@@ -1,10 +1,7 @@
 import { type LinksFunction, type MetaFunction } from "@remix-run/node";
-import { useRef, useState } from "react";
-
-import { Project } from "~/components/project";
-import projectsJson from "~/data/projects.json";
+import { useEffect, useRef, useState } from "react";
+import ProjectSection from "~/components/project-section";
 import homeStylesUrl from "~/styles/pages/home/index.css";
-
 import { makeMeta } from "~/utils/merge-meta";
 
 export const meta: MetaFunction = makeMeta({});
@@ -19,10 +16,16 @@ export const links: LinksFunction = () => {
 };
 
 export default function Index() {
-  const projectSection = useRef<HTMLDivElement>(null);
   const contactSection = useRef<HTMLDivElement>(null);
   const [contactIsOpen, setContactIsOpen] = useState<boolean | null>(null);
-  const { projects } = projectsJson;
+
+  const closeContactForm = () => {
+    setContactIsOpen(false);
+    setTimeout(() => {
+      setContactIsOpen(null);
+    }, 600);
+  };
+
   let contactClass = "";
   if (contactIsOpen === null) {
     contactClass = "";
@@ -31,13 +34,20 @@ export default function Index() {
   } else if (contactIsOpen === true) {
     contactClass = "shown";
   }
+  useEffect(() => {
+    const handleEscapeKeyPress = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        closeContactForm();
+        console.log("Escape key pressed!");
+      }
+    };
 
-  const projectElements =
-    !projects || !projects.map
-      ? null
-      : projects.map((project) => (
-          <Project key={project.slug} project={project} />
-        ));
+    document.addEventListener("keydown", handleEscapeKeyPress);
+
+    return () => {
+      document.removeEventListener("keydown", handleEscapeKeyPress);
+    };
+  }, []);
 
   return (
     <main>
@@ -55,79 +65,19 @@ export default function Index() {
             Messina
           </span>
         </h1>
+
         <h2 id="tagline" className="delay">{`{{ Software Engineer }}`}</h2>
       </header>
-      <section id="projects" className="portfolio-section">
-        <div id="project-header">
-          <div className="project-header__bg"></div>
-          <div className="project-header-text">
-            <h2 className="project-header-h2">Personal Projects:</h2>
-            <div className="project-header-adtl-links">
-              <h3>Or check out:</h3>
-              <ul className="portfolio-links">
-                <li>
-                  <div
-                    className="clickable"
-                    onClick={() => {
-                      setContactIsOpen(true);
-                    }}
-                  >
-                    My contact info
-                  </div>
-                </li>
-                <li>
-                  <a
-                    href="https://smessina.lol/now"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    What I'm up to now
-                  </a>
-                </li>
-                <li>
-                  My&nbsp;
-                  <a href="/resume" target="_blank" rel="noopener">
-                    resume
-                  </a>
-                  &nbsp;
-                  <a href="/resume" target="_blank" rel="noopener">
-                    (HTML
-                  </a>
-                  &nbsp;or&nbsp;
-                  <a
-                    href="/resume.pdf"
-                    download="SamMessinaResume.pdf"
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    PDF
-                  </a>
-                  )
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div ref={projectSection} className="portfolio-section__portfolio">
-          {projectElements}
-        </div>
-      </section>
+
+      <ProjectSection setContactIsOpen={setContactIsOpen} />
       <section
         ref={contactSection}
         className={`contact-section ${contactClass}`}
       >
-        <div className="contact-form-bg"></div>
+        <div className="contact-form-bg" onClick={closeContactForm}></div>
         <div className="contact-header__bg bottom"></div>
         <div id="contact-form" className="contact-form">
-          <span
-            onClick={() => {
-              setContactIsOpen(false);
-              setTimeout(() => {
-                setContactIsOpen(null);
-              }, 600);
-            }}
-            className="x"
-          >
+          <span onClick={closeContactForm} className="x">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="50"

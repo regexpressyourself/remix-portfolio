@@ -4,7 +4,7 @@ import { HTML_HEAD } from "~/utils/constants/html";
 
 export const mergeMeta = (
   overrideFn: MetaFunction,
-  appendFn?: MetaFunction,
+  appendFn?: MetaFunction
 ): MetaFunction => {
   return (arg) => {
     let mergedMeta = arg.matches.reduce((acc, match) => {
@@ -21,7 +21,7 @@ export const mergeMeta = (
           ("property" in meta &&
             "property" in override &&
             meta.property === override.property) ||
-          ("title" in meta && "title" in override),
+          ("title" in meta && "title" in override)
       );
       if (index !== -1) {
         mergedMeta.splice(index, 1, override);

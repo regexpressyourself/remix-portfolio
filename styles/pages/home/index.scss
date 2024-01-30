@@ -8,8 +8,7 @@ $gutter-size: 10vw;
 @font-face {
   font-family: "GilroyBold";
   font-display: auto;
-  src:
-    local("Gilroy-ExtraBold"),
+  src: local("Gilroy-ExtraBold"),
     url("/fonts/Gilroy-ExtraBold.otf") format("opentype");
 
   font-display: swap;
@@ -19,9 +18,7 @@ $gutter-size: 10vw;
   font-family: "GilroyLight";
   font-display: auto;
   font-display: swap;
-  src:
-    local("Gilroy-Light"),
-    url("/fonts/Gilroy-Light.otf") format("opentype");
+  src: local("Gilroy-Light"), url("/fonts/Gilroy-Light.otf") format("opentype");
 }
 
 * {

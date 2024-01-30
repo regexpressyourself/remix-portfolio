@@ -19,9 +19,7 @@ textarea.question {
   border: none;
   width: 100%;
   background: black;
-  transition:
-    padding-top 0.2s ease,
-    margin-top 0.2s ease;
+  transition: padding-top 0.2s ease, margin-top 0.2s ease;
   overflow-x: hidden;
   /* Hack to make "rows" attribute apply in Firefox. */
 }
@@ -134,10 +132,7 @@ textarea.question + label > span {
   top: -35px;
   left: 0px;
   z-index: 1;
-  transition:
-    top 0.2s ease,
-    height 0.2s ease,
-    font-size 0.2s ease,
+  transition: top 0.2s ease, height 0.2s ease, font-size 0.2s ease,
     color 0.2s ease;
   @media screen and (min-width: 1200px) {
     top: -50px;

@@ -1,5 +1,17 @@
-import { type LinksFunction, type MetaFunction } from "@remix-run/node";
-import { Links, Meta, Outlet, Scripts, useRouteError } from "@remix-run/react";
+import {
+  type LinksFunction,
+  type LoaderFunction,
+  type MetaFunction,
+} from "@remix-run/node";
+import {
+  Links,
+  Meta,
+  Outlet,
+  Scripts,
+  useLoaderData,
+  useRouteError,
+} from "@remix-run/react";
+import { posthog } from "posthog-js";
 import manifest from "~/data/manifest.json";
 import { HTML_HEAD } from "~/utils/constants/html";
 
@@ -19,8 +31,24 @@ export const links: LinksFunction = () => {
   ];
 };
 
+export const loader: LoaderFunction = async () => {
+  const runAnalytics = process.env.NODE_ENV === "production";
+  console.log("runAnalytics");
+  console.log(runAnalytics);
+  console.log("process.env.POSTHOG_ID");
+  console.log(process.env.POSTHOG_ID);
+  return { runAnalytics, postHogId: process.env.POSTHOG_ID };
+};
+
 export default function App() {
+  const { runAnalytics, postHogId } = useLoaderData<any>();
   const theme = "default";
+
+  if (runAnalytics) {
+    posthog?.init(postHogId || "", {
+      api_host: "https://us.posthog.com",
+    });
+  }
 
   return (
     <html lang="en" className={`${theme}-theme`}>

@@ -129,10 +129,7 @@
     margin-bottom: 10px;
   }
   .item__img-container {
-    transition:
-      width 0.4s,
-      height 0.4s,
-      box-shadow 0.4s;
+    transition: width 0.4s, height 0.4s, box-shadow 0.4s;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,10 +153,8 @@
     }
 
     &:hover {
-      box-shadow:
-        0 3px 3px 0 rgba(0, 0, 0, 0.14),
-        0 1px 7px 0 rgba(0, 0, 0, 0.12),
-        0 3px 1px -1px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14),
+        0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
       cursor: pointer;
 
       img.aditional-pics__sss {
@@ -177,9 +172,7 @@
   }
 
   .img-container__additional-pics {
-    transition:
-      margin 0.4s,
-      height 0.4s;
+    transition: margin 0.4s, height 0.4s;
     display: flex;
     overflow: hidden;
     height: 100%;
@@ -203,9 +196,7 @@
         }
       }
       img {
-        transition:
-          padding 0.5s,
-          opacity 0.3s;
+        transition: padding 0.5s, opacity 0.3s;
         width: 100%;
         opacity: 0;
         @media screen and (max-width: 420px) {
@@ -282,9 +273,7 @@
 
 .portfolio__item--active {
   .item__img-container {
-    box-shadow:
-      0 3px 3px 0 rgba(0, 0, 0, 0.14),
-      0 2px 7px 0 rgba(0, 0, 0, 0.12),
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 2px 7px 0 rgba(0, 0, 0, 0.12),
       0 3px 1px -1px rgba(0, 0, 0, 0.2);
     animation: scale-up-hor-left 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
     width: 100%;
