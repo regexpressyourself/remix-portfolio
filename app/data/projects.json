@@ -11,6 +11,26 @@
       "tech": "HTML, CSS, and JavaScript"
     },
     {
+      "name": "troog",
+      "link": "https://troog.smessina.com/",
+      "sourceUrl": null,
+      "slug": "troog",
+      "description": "Sync your Trello boards with Google Calendar.<br /><br />Automatically create Google Calendar events for your Trello cards.",
+      "screenshot": "/images/screens/troog.png",
+      "logo": "/images/logos/troog-logo.png",
+      "tech": "Remix, React, PostgreSQL, SCSS"
+    },
+    {
+      "name": "WAILto ",
+      "link": "https://wailto.smessina.com/",
+      "sourceUrl": "https://github.com/regexpressyourself/wailto",
+      "slug": "wailto",
+      "description": "WAILto (or What Am I Listening To) is a way to analyze your music listening. Learn about your own music trends and history. ",
+      "screenshot": "/images/screens/wailto.png",
+      "logo": "/images/logos/wailto-logo.png",
+      "tech": "Node, React, React Hooks API, PostgreSQL, HTML, SCSS"
+    },
+    {
       "name": "outwork",
       "link": "https://ow.smessina.com/",
       "sourceUrl": null,
@@ -29,16 +49,6 @@
       "screenshot": "/images/screens/hub.png",
       "logo": "/images/logos/hub-logo.png",
       "tech": "Node, React, Webhooks, MongoDB, HTML, CSS"
-    },
-    {
-      "name": "WAILto ",
-      "link": "https://wailto.smessina.com/",
-      "sourceUrl": "https://github.com/regexpressyourself/wailto",
-      "slug": "wailto",
-      "description": "WAILto (or What Am I Listening To) is a way to analyze your music listening. Learn about your own music trends and history. ",
-      "screenshot": "/images/screens/wailto.png",
-      "logo": "/images/logos/wailto-logo.png",
-      "tech": "Node, React, React Hooks API, PostgreSQL, HTML, SCSS"
     },
     {
       "name": "orderUp hookUp",

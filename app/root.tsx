@@ -33,10 +33,6 @@ export const links: LinksFunction = () => {
 
 export const loader: LoaderFunction = async () => {
   const runAnalytics = process.env.NODE_ENV === "production";
-  console.log("runAnalytics");
-  console.log(runAnalytics);
-  console.log("process.env.POSTHOG_ID");
-  console.log(process.env.POSTHOG_ID);
   return { runAnalytics, postHogId: process.env.POSTHOG_ID };
 };
 

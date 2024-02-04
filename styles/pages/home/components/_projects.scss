@@ -2,6 +2,10 @@
   background-color: #70c1b3;
 }
 
+.portfolio__item--troog .item__img-container {
+  background-color: #fff0e6;
+}
+
 .portfolio__item--lysten .item__img-container {
   background-color: #fffaff;
 }
@@ -20,7 +24,7 @@
 }
 
 .portfolio__item--outwork .item__img-container {
-  background-color: rgb(253, 246, 227);
+  background-color: #fdf6e3;
 }
 .portfolio__item--orderup-hookup .item__img-container {
   background-color: #e6f8ed;
@@ -275,6 +279,11 @@
   .item__img-container {
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 2px 7px 0 rgba(0, 0, 0, 0.12),
       0 3px 1px -1px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15), 0 4px 10px rgba(0, 0, 0, 0.12),
+        0 5px 2px -2px rgba(0, 0, 0, 0.05);
+    }
     animation: scale-up-hor-left 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
     width: 100%;
     @media screen and (max-width: 768px) {
