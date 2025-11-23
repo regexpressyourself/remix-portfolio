@@ -27,7 +27,7 @@ RUN sass styles:app/styles --no-source-map
 RUN npm run build
 
 # Expose the port the app runs on
-EXPOSE 3000
+EXPOSE 3009
 
 # Start the server
 CMD ["npm", "run", "start"]

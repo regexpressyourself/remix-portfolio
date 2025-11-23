@@ -1,13 +1,31 @@
 version: "3.9"
+
 services:
-  web:
-    container_name: remix-portfolio
+  remix-portfolio:
     build:
       context: .
       dockerfile: Dockerfile
-    ports:
-      - "3000:3000"
+    image: remix-portfolio:local
+    container_name: remix-portfolio
+    restart: unless-stopped
+    env_file:
+      - .env
     environment:
       - NODE_ENV=production
-      - PORT=3000
-    restart: unless-stopped
+      - PORT=${PORT:-3009}
+    networks:
+      - proxy
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.remix-portfolio.rule=Host(`${PORTFOLIO_DOMAIN}`)"
+      - "traefik.http.routers.remix-portfolio.entrypoints=websecure"
+      - "traefik.http.routers.remix-portfolio.tls.certresolver=le"
+      - "traefik.http.routers.remix-portfolio.middlewares=secure-headers,compress"
+      - "traefik.http.services.remix-portfolio.loadbalancer.server.port=${PORT:-3009}"
+    ports:
+      - "${PORT:-3009}:${PORT:-3009}"
+
+networks:
+  proxy:
+    external: true
+    name: proxy
